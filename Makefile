@@ -46,6 +46,12 @@ COMPILER =	base-clang ports-gcc
 MODULES =	devel/cmake \
 		lang/python
 
+.include <bsd.port.arch.mk>
+
+.if !${PROPERTIES:Mclang}
+RUN_DEPENDS +=	lang/gcc/${MODGCC4_VERSION},-c++
+.endif
+
 MODPY_ADJ_FILES +=	\
 	../clang/tools/clang-format/git-clang-format \
 	../clang/tools/scan-build-py/bin/analyze-build \
