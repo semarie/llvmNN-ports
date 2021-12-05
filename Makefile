@@ -27,8 +27,7 @@ SHARED_LIBS =	LLVM-13		0.0 \
 
 HOMEPAGE =	https://www.llvm.org/
 
-# XXX
-#MAINTAINER =
+MAINTAINER =	Sebastien Marie <semarie@online.fr>
 
 # Apache License v2.0 with LLVM Exceptions
 PERMIT_PACKAGE =	Yes
