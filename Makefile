@@ -1,6 +1,7 @@
 # $OpenBSD$
 
-ONLY_FOR_ARCHS =	${LLVM_ARCHS}
+# for lang/rust and lang/zig
+ONLY_FOR_ARCHS =	aarch64 amd64 i386 sparc64
 
 DPB_PROPERTIES =	parallel
 
