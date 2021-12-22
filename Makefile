@@ -12,8 +12,8 @@ PKGNAME =	llvm13-${LLVM_VERSION}pl${LLVM_DATE}
 # version: https://github.com/mordak/llvm-project/blob/openbsd-release/13.x/llvm/CMakeLists.txt
 # commit:  https://github.com/mordak/llvm-project/commits/openbsd-release/13.x
 LLVM_VERSION =	13.0.1
-LLVM_COMMIT =	24dde12cadbffca56e0d191ff42863b44afb9942
-LLVM_DATE =	20211113
+LLVM_COMMIT =	ab436c534f2714fa94f6cf0704a8b58c1339ab3c
+LLVM_DATE =	20211219
 
 SUBST_VARS +=	LLVM_VERSION
 
