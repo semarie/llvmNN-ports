@@ -1,9 +1,9 @@
 $OpenBSD$
 Do not pass -Bsymbolic-functions on sparc64, the linker doesn't support it
 
-Index: llvm-project-24dde12cadbffca56e0d191ff42863b44afb9942/clang/tools/clang-shlib/CMakeLists.txt
---- llvm-project-24dde12cadbffca56e0d191ff42863b44afb9942/clang/tools/clang-shlib/CMakeLists.txt.orig
-+++ llvm-project-24dde12cadbffca56e0d191ff42863b44afb9942/clang/tools/clang-shlib/CMakeLists.txt
+Index: clang/tools/clang-shlib/CMakeLists.txt
+--- clang/tools/clang-shlib/CMakeLists.txt.orig
++++ clang/tools/clang-shlib/CMakeLists.txt
 @@ -50,6 +50,6 @@ add_clang_library(clang-cpp
                    ${_DEPS})
  # Optimize function calls for default visibility definitions to avoid PLT and

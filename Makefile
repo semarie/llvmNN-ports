@@ -38,6 +38,7 @@ MASTER_SITES =	https://github.com/mordak/llvm-project/archive/
 
 DISTFILES =	llvm-project-${LLVM_VERSION}-${LLVM_COMMIT:C/(........).*/\1/}${EXTRACT_SUFX}{${LLVM_COMMIT}${EXTRACT_SUFX}}
 
+WRKDIST =	${WRKDIR}/llvm-project-${LLVM_COMMIT}
 WRKSRC =	${WRKDIR}/llvm-project-${LLVM_COMMIT}/llvm
 
 # C++11

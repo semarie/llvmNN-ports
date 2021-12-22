@@ -1,9 +1,9 @@
 $OpenBSD$
 Do not pass -Bsymbolic-functions on sparc64, the linker doesn't support it
 
-Index: llvm-project-24dde12cadbffca56e0d191ff42863b44afb9942/llvm/tools/llvm-shlib/CMakeLists.txt
---- llvm-project-24dde12cadbffca56e0d191ff42863b44afb9942/llvm/tools/llvm-shlib/CMakeLists.txt.orig
-+++ llvm-project-24dde12cadbffca56e0d191ff42863b44afb9942/llvm/tools/llvm-shlib/CMakeLists.txt
+Index: llvm/tools/llvm-shlib/CMakeLists.txt
+--- llvm/tools/llvm-shlib/CMakeLists.txt.orig
++++ llvm/tools/llvm-shlib/CMakeLists.txt
 @@ -50,7 +50,7 @@ if(LLVM_BUILD_LLVM_DYLIB)
        # Solaris ld does not accept global: *; so there is no way to version *all* global symbols
        set(LIB_NAMES -Wl,--version-script,${LLVM_LIBRARY_DIR}/tools/llvm-shlib/simple_version_script.map ${LIB_NAMES})
